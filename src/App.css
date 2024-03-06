@@ -1,0 +1,305 @@
+html {
+  
+  font-size: 15px;
+  color: black;
+  background-color: white;
+}
+
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #206f62;
+
+  /* center element */
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  flex-direction: column;
+}
+
+/* erase default styles */
+
+button {
+
+  font-family: inherit;
+  background: unset;
+  color: inherit;
+  border: none;
+}
+
+input {
+  
+  outline: none;
+  border: none;
+}
+
+select {
+
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+}
+
+figure {
+
+  margin: 0;
+}
+
+a {
+
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+
+  object-fit: contain;
+}
+
+select {
+
+  appearance: none;
+  outline: 10px black;
+  border: 0;
+  box-shadow: none;
+}
+
+ul {
+
+  padding: 0;
+  margin: 0;
+}
+
+li {
+
+  list-style-type: none;
+}
+
+/* usefull classes */
+
+.container {
+
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+
+  /* center element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error {
+
+  color: #ff4747;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Home's section */
+
+.center {
+
+  margin: 45vh auto 0 auto;
+}
+
+/* AddCity's section */
+
+.asking {
+
+  width: 250px;
+  height: 2.5rem;
+  margin: 10px;
+  border-radius: 5px;
+  border: 3px solid rgba(145, 245, 173, 0);
+}
+
+.asking:focus {
+
+  border: 3px solid rgba(145, 245, 173, 1);
+}
+
+/* Geoloc's section */
+
+.geoloc {
+
+  width: 250px;
+  height: 2.5rem;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: rgba(145, 245, 173, 1);
+}
+
+.geoloc:active, .geoloc:hover {
+
+  background-color: rgba(145, 245, 173, .5);
+}
+/* Weather's section */
+
+.today {
+
+  width: 100%;
+  padding: 40px;
+  margin: 25px auto;
+  border-radius: 5px;
+  background-color: #91f5ad;
+  box-shadow: 10px 5px 5px black;
+
+  /* center element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 450px) {
+
+    width: 90%;
+  }
+}
+
+.week {
+
+  width: 100%;
+  margin: 10px auto;
+
+  /* center element */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 10px;
+	grid-row-gap: 10px;
+
+  @media screen and (max-width: 450px) {
+
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.day {
+
+  /* width: 12%; */
+  padding: 10px;
+  height: 22vh;
+  border-radius: 5px;
+  background-color: #91f5ad;
+  box-shadow: 10px 5px 5px black;
+}
+
+/* MainInformations' section */
+
+.main-informations {
+
+  width: 100%;
+
+  /* center element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.date {
+
+  width: 100%;
+  margin: 15px auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  /* center element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conditions {
+
+  width: 100%;
+  font-style: italic;
+  font-weight: bold;
+  margin: 10px auto;
+  
+  /* center element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.temperatures {
+
+  width: 100%;
+  margin: 10px auto;
+
+  /* center element */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.fork {
+
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.min {
+
+  color: #48beff;
+}
+
+.max {
+
+  color: #ff4747;
+}
+
+.average {
+
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* SecondaryInformations' section */
+
+.secondary-informations {
+
+  width: 100%;
+  margin-top: 25px;
+
+  /* center element */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+	grid-row-gap: 10px;
+  
+  @media screen and (max-width: 450px) {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.info {
+
+  /* center element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.icone {
+
+  width: 25px;
+  margin-right: 10px;
+}
