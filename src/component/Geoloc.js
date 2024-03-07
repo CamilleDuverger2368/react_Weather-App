@@ -46,7 +46,7 @@ export default function Geoloc() {
             })
             .catch( err => {
                 
-                setError(err)
+                setError(err.request.responseText)
             })
     }
 

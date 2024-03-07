@@ -3,7 +3,7 @@ import { WeatherContext } from "../context/WeatherContext"
 import MainInformations from "./MainInformations"
 import SecondaryInformations from "./SecondaryInformations"
 
-export default function Weather() {
+export default function Weather({ changeAsking }) {
 
     const weather = useContext(WeatherContext)
 
@@ -21,6 +21,8 @@ export default function Weather() {
 
     return (
         <div className="container">
+            <button className="geoloc" onClick={ () => changeAsking(true) }>Return</button>
+            { !weather.city ? (<h2>Your Location</h2>) : (<h2>{ weather.city }</h2>) }
             <div className="today">
                 <MainInformations maxTemp={ today.maxt }
                                   minTemp={ today.mint }

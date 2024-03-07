@@ -53,7 +53,7 @@ export default function AddCity() {
             })
             .catch( err => {
                 
-                setError(err)
+                setError(err.request.responseText)
             })
     }
 

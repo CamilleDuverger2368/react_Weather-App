@@ -100,10 +100,10 @@ li {
 
 .error {
 
+  width: 250px;
   color: #ff4747;
-  margin-bottom: 10px;
+  margin: 0 10px 10px 10px;
   font-weight: bold;
-  font-size: 1.5rem;
 }
 
 /* Home's section */
@@ -145,6 +145,15 @@ li {
   background-color: rgba(145, 245, 173, .5);
 }
 /* Weather's section */
+
+h2 {
+
+  font-style: italic;
+  color: #91f5ad;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin: 10px 10px 0 10px;
+}
 
 .today {
 

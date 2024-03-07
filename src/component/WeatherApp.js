@@ -22,6 +22,6 @@ export default function WeatherApp() {
             <Geoloc />
         </div>
     ) : (
-        <Weather />
+        <Weather changeAsking={ setAsking } />
     )
 }
